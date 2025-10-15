@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title></title>
+    <script>
+function show()
+        {
+            var a = document.getElementById('num').value;
+            var pattern = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}/g;
+            if(a.match(pattern))
+            {
+                alert("Valid");
+            }
+            else
+            {
+                alert("Invalid");
+            }
+        }
+    </script>
+    </head>
+    <body align="center">
+        <form onsubmit="show()">
+        <input type="text" id="num">
+        <input type="submit" value="Submit">
+        </form>
+    </body>
+    </html>

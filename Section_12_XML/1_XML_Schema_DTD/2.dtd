@@ -1,0 +1,6 @@
+<!DOCTYPE employee[
+    <!ELEMENT employee (empname,company,mobile)>
+    <!ELEMENT empname (#PCDATA)>
+    <!ELEMENT company (#PCDATA)>
+    <!ELEMENT mobile (#PCDATA)>
+]>

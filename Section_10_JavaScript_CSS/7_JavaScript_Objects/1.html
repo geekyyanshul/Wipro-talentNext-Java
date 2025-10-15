@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title></title>
+        <script>
+            function fun(){
+            var a=document.getElementById("first").value;
+            var w=a.indexOf("World");
+            if(w==-1)
+            document.write("Not Found");
+            else
+            document.write("Positioned at index:"+w);
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="first">
+        <input type="button" onclick="fun()" value="Submit" />
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<student:stud >
+   <stud:studentID></cont:name>
+   <stud:Theory_Marks></stud:Theory_Marks>
+   <stud:Practical_Marks></stud:Practical_Marks>
+   <stud:Total_Marks></stud:Total_Marks>
+   <stud:Grade></stud:Grade>
+</student:stud>
+
+<?xml version = "1.0" encoding = "UTF-8"?>
+<student:stud >
+   <stud:studentID></cont:name>
+   <stud:Name></stud:Name>
+   <stud:DOB></stud:DOB>
+   <stud:Gender></stud:Gender>
+   <stud:Course></stud:Course>
+</student:stud>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title></title>
+        <script>
+            function show()
+        {
+            var a = document.getElementById('num').value;
+            var pattern = /[0-9]{3}?[-|.| ]?[0-9]{3}?[-|.| ]?[0-9]{4}$/g;
+            if(a.match(pattern))
+            {
+            alert("Valid");
+            }
+            else
+            {
+                alert("Invalid");
+            }
+        }
+    </script>
+    </head>
+    <body align="center" style="margin-top:10%">
+        <form onsubmit="show()">
+            <input type="text" id="num" ><br><br>
+        
+            <input type="submit"  value="submit"/>
+            </form>
+
+    </body>
+    </html>

@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title></title>
+        <script>
+            function fun(){
+            var a=document.getElementById("first").value;
+            var b=a.substring(0,a.length-4);
+            document.write(b);
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="first">
+        <input type="button" onclick="fun()" value="Click to remove last 3 characters" />
+    </body>
+</html>

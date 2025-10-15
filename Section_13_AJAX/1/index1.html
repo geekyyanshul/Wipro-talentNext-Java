@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function fun(){
+     var state= document.form1.state.value;
+     var url = "cities.jsp?state="+state;
+     var req=new XMLHttpRequest();
+     try{
+         req.onreadystatechange = function()
+         {
+             if(req.readyState==4)
+                 {
+                 
+                 var value=req.responseText;
+                 document.getElementById("a1").innerHTML=value;
+                 }
+         }
+     }catch(e){
+         
+     }
+     req.open("GET",url,true);
+     req.send();
+}
+</script>
+</head>
+<body>
+<form name="form1">
+<select name="state">
+<option>MP</option>
+<option>MH</option>
+<option>UP</option>
+
+</select>
+<input type="button" onclick="fun()" value="show Cities"/>
+</form>
+<hr/>
+<span id="a1"></span>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title></title>
+        <script>
+            function show()
+            {
+                var d = new Date();
+                
+                var hh = d.getHours();
+                var mm = d.getMinutes();
+                var ss = d.getSeconds();
+                
+                hh = update(hh);
+                mm = update(mm);
+                ss = update(ss);
+                
+                document.getElementById("clock").innerHTML = hh+":"+mm+":"+ss;
+                var time = setTimeout("show();",1000);
+            }
+            function update(a)
+            {
+                if(a<10)
+                    return "0"+a;
+                else
+                     return a;
+            }
+        </script>
+    </head>
+    <body onload="show()">
+        <div id="clock"></div>
+        
+    </body>
+</html>

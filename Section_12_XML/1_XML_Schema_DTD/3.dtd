@@ -1,0 +1,9 @@
+<!DOCTYPE cardigan[
+<!ELEMENT catalog (product)>
+<!ELEMENT product (catalog_item+)>
+<!ELEMENT catalog_item (item_number,price,size+)>
+<!ELEMENT size (color_swatch+)>
+<!ELEMENT item_number (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT color_swatch (#PCDATA)>
+]>

@@ -1,0 +1,28 @@
+<html>
+<head>
+<title></title>
+    <script>
+    function palindrome()
+    {
+        var a = document.getElementById('str').value;
+        var r=0 ,t=0;
+        while(a>0){
+            r=a%10;
+            t=t*10+r;
+            a=parseInt(a/10);
+        }
+        
+        document.write(t);
+        
+    }
+    </script>
+
+</head>
+
+<body>
+<form>
+    <input type="text" id="str"/>
+    <input type="submit" onClick="palindrome()" />
+<form>
+</body>
+</html>

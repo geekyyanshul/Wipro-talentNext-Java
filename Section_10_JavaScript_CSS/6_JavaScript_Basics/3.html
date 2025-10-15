@@ -1,0 +1,32 @@
+<html>
+<head>
+<title></title>
+    <script>
+    function palindrome()
+    {
+        var a = document.getElementById('str').value;
+        var r = "";
+        for(i=a.length-1;i>=0;i--)
+        {
+            r = r + a.charAt(i);
+        }
+        if(a==r)
+        {
+            document.write("Palindrome");
+        }
+        else
+        {
+            document.write("Not a palindrome");
+        }
+    }
+    </script>
+
+</head>
+
+<body>
+<form>
+    <input type="text" id="str"/>
+    <input type="submit" onClick="palindrome()" />
+<form>
+</body>
+</html>

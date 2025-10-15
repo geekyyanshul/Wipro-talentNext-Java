@@ -1,0 +1,27 @@
+<html>
+<head>
+<title></title>
+    <script>
+    function Case() {
+    var str=document.getElementById("str").value;
+    var splitStr = str.toLowerCase().split(' ');
+    for (var i = 0; i < splitStr.length; i++) {
+        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);  
+        document.write(splitStr[i]+" ");   
+    } 
+    /*splitStr.join(' '); */
+   
+ }
+ 
+
+    </script>
+
+</head>
+
+<body>
+<form>
+    <input type="text" id="str"/>
+    <input type="submit" onClick="Case()" />
+<form>
+</body>
+</html>

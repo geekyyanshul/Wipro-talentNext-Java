@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+    function fun()
+    {
+        var email = document.form1.email.value;
+        var url = "check.jsp?email="+email;
+        
+        var req = new XMLHttpRequest();
+        
+        try
+        {
+            req.onreadystatechange = function()
+            {
+                if(req.readyState == 4)
+                {
+                    var value = req.responseText;
+                    document.getElementById("a1").innerHTML = value;
+                }
+            }
+        }
+        catch(e)
+        {
+            
+        }
+        req.open("GET",url,true);
+        req.send();
+    }
+
+</script>
+</head>
+<body>
+<form name="form1"> Email:
+    <input type="text" name="email"/>
+    <input type="button" onclick="fun()" value="Check Avalilability"/>
+    Password:
+    <input type="password" name="password"/><br>
+    Full Name:
+    <input type="text" name="fullname"/><br>
+    DOB:
+    <input type="date" name="dob"/><br>
+    Male
+    <input type="radio" name="one"/>
+    Female  
+    <input type="radio" name="one"/>
+    Other
+    <input type="radio" name="one"/><br>
+    City:
+    <input type="text" name="city"/><br>
+    Pincode:
+    <input type="number" name="code"/><br>
+    Mobile no:
+    <input type="numbet" name="mobile"/>
+
+</form>
+<hr/>
+<span id="a1"></span>
+</body>
+</html>

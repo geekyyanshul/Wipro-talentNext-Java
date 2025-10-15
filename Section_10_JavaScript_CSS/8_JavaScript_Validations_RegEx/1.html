@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title></title>
+        <script>
+function show2()
+        {
+            var a = document.getElementById('num').value;
+            var b = document.getElementById('pass').value;
+            var pattern1 = /[0-9]/g;
+            var pattern2 = /\w{4}/g;
+            if(a.match(pattern1))
+            {
+                if(b.match(pattern2))
+                {
+                alert("Valid");
+                }
+                else{
+                 
+                    alert("Invalid");
+                   
+                document.getElementById('pass').select();
+                return false;
+                }
+            }
+            else
+            {
+             
+                alert("Invalid");
+                
+                document.getElementById('num').select();
+                return false;
+            }
+        }
+    </script>
+    </head>
+    <body align="center" style="margin-top:10%">
+        <form onsubmit="show2()">
+        <input type="text" id="num" ><br><br>
+        <input type="password" id="pass" /><br><br>
+        <input type="submit"  value="submit"/>
+        </form>
+        <p id="sp1"></p>
+
+    </body>
+    </html>
