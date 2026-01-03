@@ -1,7 +1,7 @@
 
 class Project {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {   
 
         int[] empNo = { 1001, 1002, 1003, 1004, 1005, 1006, 1007 };
         String[] empName = { "Ashish", "Sushma", "Rahul", "Chahat", "Ranjan", "Suman", "Tanmay" };
